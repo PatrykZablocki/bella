@@ -2,6 +2,43 @@ nav .nav-links .nav-link {
     transition: color .2s ease;
 
     &:hover {
-        color: red;
+        color: $color-primary;
+    }
+}
+
+.buttons-wrapper {
+    .button--first, .button--left {
+        transition: background-color .15s ease-in-out;
+
+        &:hover {
+            background-color: lighten($color-primary, 10%);
+        }
+    }
+
+    .button--second {
+        transition: background-color .15s ease-in-out;
+
+        &:hover {
+            background-color: darken($color-primary, 10%);
+            color: $color-white;
+        }
+
+
+        @media screen and (min-width: $desktop-width) {
+            transition-property: background-color, border-color;
+            &:hover {
+                border-color: $color-primary;
+            }
+        }
+    }
+
+    .button--right {
+        transition: background-color .25s ease,
+                    border-color .25s ease;
+
+        &:hover {
+            background-color: $color-primary;
+            border-color: $color-primary;
+        }
     }
 }

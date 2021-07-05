@@ -1,6 +1,7 @@
 @import 'global';
 @import 'variables';
 @import 'typography';
+@import 'index.hover';
 
 //
 // navigation
@@ -102,6 +103,7 @@ nav {
             width: unset;
             box-shadow: unset;
             transform: unset;
+            transition: unset;
         }
 
         .logo {
